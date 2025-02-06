@@ -9,7 +9,7 @@ namespace ShoeGrabCommonModels;
 public class Order
 {
     public int Id { get; set; }
-    public string Status { get; set; } = OrderStatus.New;
+    public OrderStatus Status { get; set; } = OrderStatus.New;
     public DateTime OrderDate { get; set; } = DateTime.UtcNow;
     public double TotalPrice { get; set; }
     public Address ShippingAddress { get; set; } = new();
